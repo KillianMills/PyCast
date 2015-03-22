@@ -27,5 +27,14 @@
     <string name="aboutButton">About</string>
     <string name="title_activity_about">About</string>
     <string name="title_activity_presentation_mode">PresentationMode</string>
+    <string name="Send">Send</string>
+    <string name="EnterText">Enter Text</string>
+    <string name="Save">Save</string>
+    <string name="saveMouseSettings">Save Mouse Sensitivity</string>
+    <string name="Settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="title_activity_share">share</string>
+    <string name="title_activity_main_share">MainShare</string>
+    <string name="title_activity_settings">Settings</string>
 
 </resources>

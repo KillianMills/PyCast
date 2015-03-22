@@ -1,11 +1,9 @@
 package killianmills.pycast;
 
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.os.Bundle;;
 
-
+//Class used for solely displaying text to user, some supplied methods from build removed due to not being used
 public class About extends ActionBarActivity {
 
     @Override

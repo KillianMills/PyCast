@@ -10,23 +10,23 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
 
-    Button connect;
+    private Button connect;
+    private final Context context = this;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //For 4 buttons on main menu
+        //For 5 buttons on main menu
         addListenerOnButton1();
         addListenerOnButton2();
         addListenerOnButton3();
         addListenerOnButton4();
+        addListenerOnButton5();
     }
 
-    // CONNECTION SETTINGS
+    // CONNECTION  launch on button press
     public void addListenerOnButton1() {
-
-        final Context context = this;
 
         connect = (Button) findViewById(R.id.connectionButton);
 
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View arg0) {
 
-                Intent intent = new Intent(context, ConnectionSettings.class);
+                Intent intent = new Intent(context,Settings.class);
                 startActivity(intent);
 
             }
@@ -44,10 +44,8 @@ public class MainActivity extends Activity {
 
     }
 
-    // GENERAL MODE
-    public void addListenerOnButton2() {
-
-        final Context context = this;
+    // GENERAL MODE launch on button press
+        public void addListenerOnButton2() {
 
         connect = (Button) findViewById(R.id.generalButton);
 
@@ -65,10 +63,8 @@ public class MainActivity extends Activity {
 
     }
 
-    // PRESENTATION MODE
+    // PRESENTATION MODE launch on button press
     public void addListenerOnButton3() {
-
-        final Context context = this;
 
         connect = (Button) findViewById(R.id.presentationButton);
 
@@ -86,10 +82,27 @@ public class MainActivity extends Activity {
 
     }
 
-    // ABOUT
+    // PRESENTATION MODE launch on button press
     public void addListenerOnButton4() {
 
-        final Context context = this;
+        connect = (Button) findViewById(R.id.shareButton);
+
+        connect.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, Share.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+    }
+
+    // ABOUT launch on button press
+    public void addListenerOnButton5() {
 
         connect = (Button) findViewById(R.id.aboutButton);
 
